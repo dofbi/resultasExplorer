@@ -119,7 +119,7 @@ export function CandidatsVote8() {
 }
 
 
-function DownloadIcon(props) {
+function DownloadIcon(props:any) {
   return (
     <svg
       {...props}
@@ -141,7 +141,7 @@ function DownloadIcon(props) {
 }
 
 
-function UserIcon(props) {
+function UserIcon(props:any) {
   return (
     <svg
       {...props}
@@ -162,7 +162,7 @@ function UserIcon(props) {
 }
 
 
-function UsersIcon(props) {
+function UsersIcon(props:any) {
   return (
     <svg
       {...props}
@@ -185,7 +185,7 @@ function UsersIcon(props) {
 }
 
 
-function TrendingUpIcon(props) {
+function TrendingUpIcon(props:any) {
   return (
     <svg
       {...props}

@@ -123,7 +123,7 @@ export function CandidatsVote3() {
 }
 
 
-function UsersIcon(props) {
+function UsersIcon(props:any) {
   return (
     <svg
       {...props}
@@ -146,7 +146,7 @@ function UsersIcon(props) {
 }
 
 
-function CheckCircleIcon(props) {
+function CheckCircleIcon(props:any) {
   return (
     <svg
       {...props}
@@ -167,7 +167,7 @@ function CheckCircleIcon(props) {
 }
 
 
-function XCircleIcon(props) {
+function XCircleIcon(props:any) {
   return (
     <svg
       {...props}
@@ -189,7 +189,7 @@ function XCircleIcon(props) {
 }
 
 
-function TrendingUpIcon(props) {
+function TrendingUpIcon(props:any) {
   return (
     <svg
       {...props}

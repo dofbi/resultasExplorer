@@ -1,37 +1,8 @@
 ---
-import "@/styles/globals.css";
-import { CandidatsVote } from "../components/candidats-vote";
-import { CandidatsVote1 } from "../components/candidats-vote1";
-import { CandidatsVote2 } from "../components/candidats-vote2";
-import { CandidatsVote3 } from "../components/candidats-vote3";
-import { CandidatsVote4 } from "../components/candidats-vote4";
-import { CandidatsVote5 } from "../components/candidats-vote5";
-import { CandidatsVote6 } from "../components/candidats-vote6";
-import { CandidatsVote7 } from "../components/candidats-vote7";
-import { CandidatsVote8 } from "../components/candidats-vote8";
-import { CandidatsVote9 } from "../components/candidats-vote9";
-import { CandidatsVote10 } from "../components/candidats-vote10";
+import Layout from "../layouts/BaseLayout.astro";
+import { DashboardPage } from "../components/dashboard";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <CandidatsVote />
-    <CandidatsVote1 />
-    <CandidatsVote2 />
-    <CandidatsVote3 />
-    <CandidatsVote4 />
-    <CandidatsVote5 />
-    <CandidatsVote6 />
-    <CandidatsVote7 />
-    <CandidatsVote8 />
-    <CandidatsVote9 />
-    <CandidatsVote10 />
-  </body>
-</html>
+<Layout title="Résultat provisoire élection présidentielle Sénégal 2024">
+  <DashboardPage client:load />
+</Layout>

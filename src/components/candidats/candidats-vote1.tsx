@@ -137,7 +137,7 @@ export function CandidatsVote1() {
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2 space-y-0">
             <CardTitle className="text-base font-bold">Results</CardTitle>
-            <Button size="xs">Refresh</Button>
+            <Button size="sm">Refresh</Button>
           </CardHeader>
           <CardContent className="p-0">
             <Table>
@@ -237,7 +237,7 @@ export function CandidatsVote1() {
 }
 
 
-function Package2Icon(props) {
+function Package2Icon(props:any) {
   return (
     <svg
       {...props}
@@ -259,7 +259,7 @@ function Package2Icon(props) {
 }
 
 
-function BellIcon(props) {
+function BellIcon(props:any) {
   return (
     <svg
       {...props}
@@ -280,7 +280,7 @@ function BellIcon(props) {
 }
 
 
-function UserIcon(props) {
+function UserIcon(props:any) {
   return (
     <svg
       {...props}
@@ -301,7 +301,7 @@ function UserIcon(props) {
 }
 
 
-function GaugeIcon(props) {
+function GaugeIcon(props:any) {
   return (
     <svg
       {...props}
@@ -322,7 +322,7 @@ function GaugeIcon(props) {
 }
 
 
-function LogOutIcon(props) {
+function LogOutIcon(props:any) {
   return (
     <svg
       {...props}
@@ -344,7 +344,7 @@ function LogOutIcon(props) {
 }
 
 
-function UsersIcon(props) {
+function UsersIcon(props:any) {
   return (
     <svg
       {...props}

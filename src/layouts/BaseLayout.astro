@@ -1,0 +1,17 @@
+---
+const { title } = Astro.props;
+import "@/styles/globals.css";
+---
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{`${title} | Dakaractu.com` || "Dakaractu.com"}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
