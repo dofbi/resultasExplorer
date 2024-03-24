@@ -21,26 +21,12 @@ import { Footer } from "@/components/dashboard/components/footer"
 // import { UserNav } from "@/components/dashboard/components/user-nav"
 import {TabsTriger} from "@/components/dashboard/components/tabsTriger"
 import{Candidats8} from '@/components/candidats8';
+import{Candidats6} from '@/components/candidats6';
+import { CarteRegion } from "../candidats/carte-region"
+
 
 export function DashboardPage() {
-  candidats: [
-    {
-       nom: "Mamadou Diop",
-       parti: "Parti du Renouveau Sénégalais (PRS)"
-    },
-    {
-      nom: "Aminata Ndiaye",
-      parti: "Coalition Espoir pour le Sénégal"
-    },
-    {
-      nom: "Ousmane Diallo",
-      parti: "Alliance pour la République (APR)"
-    },
-    {
-      nom: "Fatoumata Sow",
-      parti: "Mouvement pour la Renaissance du Sénégal (MRS)"
-    }
-  ]
+
   return (
     <>
       <div className="flex-col md:flex">
@@ -181,13 +167,13 @@ export function DashboardPage() {
                 </Card>
                 <Card className="col-span-3">
                   <CardHeader>
-                    <CardTitle>Recent Sales</CardTitle>
+                    <CardTitle>Carte Régional</CardTitle>
                     <CardDescription>
                       You made 265 sales this month.
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <RecentSales />
+                     <CarteRegion />
                   </CardContent>
                 </Card>
               </div>
@@ -202,6 +188,15 @@ export function DashboardPage() {
            })
          */}
           <Candidats8 />
+          
+          <div className="grid grid-cols-2 gap-4">
+               <div>
+               <Candidats6 />
+               </div>
+               <div>
+               <Candidats6 />
+               </div>
+          </div>
         </div>
       </div>
       <Footer/>
