@@ -11,7 +11,7 @@ export function CardCandidat(){
     <Card className="w-[356px] bg-white p-4 rounded-lg shadow-md flex items-center">
       <div className="flex items-center space-x-4">
         <Avatar>
-          <AvatarImage alt="{props.nom}" src="/img.png" />
+          <AvatarImage alt="{props.nom}" src="./placeholder.svg" />
         </Avatar>
         <div>
           <h3 className="font-semibold text-lg">Bassirou</h3>
