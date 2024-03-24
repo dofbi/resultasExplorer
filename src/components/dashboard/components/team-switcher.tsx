@@ -49,27 +49,88 @@ import {
 
 const groups = [
   {
-    label: "Personal Account",
+    label: "Candidat",
     teams: [
       {
-        label: "Alicia Koch",
-        value: "personal",
-      },
-    ],
-  },
-  {
-    label: "Teams",
-    teams: [
-      {
-        label: "Acme Inc.",
-        value: "acme-inc",
+        label: "Bassirou Diomaye Diakher Faye",
+        value: "Bassirou Diomaye Diakher Faye",
       },
       {
-        label: "Monsters Inc.",
-        value: "monsters",
+        label: "Boubacar CAMARA",
+        value: "Boubacar CAMARA",
+      },
+      {
+        label: "Cheikh Tidiane DIEYE",
+        value: "Cheikh Tidiane DIEYE",
+      },
+      {
+        label: "Dethie FALL",
+        value: "Dethie FALL",
+      },
+      {
+        label: "Daouda NDIAYE",
+        value: "Daouda NDIAYE",
+      },
+      {
+        label: "Habib SY",
+        value: "Habib SY",
+      },
+      {
+        label: "Khalifa Ababacar SALL",
+        value: "Khalifa Ababacar SALL",
+      },
+      {
+        label: "Anta Babacar NGOM",
+        value: "Anta Babacar NGOM",
+      },
+      {
+        label: "Amadou BA",
+        value: "Amadou BA",
+      },
+      {
+        label: "Idrissa SECK",
+        value: "Idrissa SECK",
+      },
+      {
+        label: "Aliou Mamadou DIA",
+        value: "Aliou Mamadou DIA",
+      },
+      {
+        label: "Serigne MBOUP",
+        value: "Serigne MBOUP",
+      },
+      {
+        label: "Papa Djibril FALL",
+        value: "Papa Djibril FALL",
+      },
+      {
+        label: "Mamadou Lamine DIALLO",
+        value: "Mamadou Lamine DIALLO",
+      },
+      {
+        label: "Mahammed Boun Abdallah DIONNE",
+        value: "Mahammed Boun Abdallah DIONNE",
+      },
+      {
+        label: "El Hadji Malick GAKOU",
+        value: "El Hadji Malick GAKOU",
+      },
+      {
+        label: "Aly Ngouille NDIAYE",
+        value: "Aly Ngouille NDIAYE",
+      },
+      {
+        label: "El Hadji Mamadou DIAO",
+        value: "El Hadji Mamadou DIAO",
+      },
+      {
+        label: "Thierno Alassane SALL",
+        value: "Thierno Alassane SALL",
       },
     ],
+    
   },
+ 
 ]
 
 type Team = (typeof groups)[number]["teams"][number]
@@ -111,7 +172,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
         <PopoverContent className="w-[200px] p-0">
           <Command>
             <CommandList>
-              <CommandInput placeholder="Search team..." />
+              <CommandInput placeholder="Recherche Candidat..." />
               <CommandEmpty>No team found.</CommandEmpty>
               {groups.map((group) => (
                 <CommandGroup key={group.label} heading={group.label}>
@@ -122,11 +183,11 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
                         setSelectedTeam(team)
                         setOpen(false)
                       }}
-                      className="text-sm"
+                      className="text-sm text-black"
                     >
                       <Avatar className="mr-2 h-5 w-5">
                         <AvatarImage
-                          src={`https://avatar.vercel.sh/${team.value}.png`}
+                          src='/img/BDF.png'
                           alt={team.label}
                           className="grayscale"
                         />
@@ -147,21 +208,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
               ))}
             </CommandList>
             <CommandSeparator />
-            <CommandList>
-              <CommandGroup>
-                <DialogTrigger asChild>
-                  <CommandItem
-                    onSelect={() => {
-                      setOpen(false)
-                      setShowNewTeamDialog(true)
-                    }}
-                  >
-                    <PlusCircledIcon className="mr-2 h-5 w-5" />
-                    Create Team
-                  </CommandItem>
-                </DialogTrigger>
-              </CommandGroup>
-            </CommandList>
+           
           </Command>
         </PopoverContent>
       </Popover>
