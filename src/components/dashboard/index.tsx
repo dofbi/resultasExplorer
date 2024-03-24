@@ -13,23 +13,17 @@ import {
   TabsTrigger,
 } from "@/components/ui/tabs"
 // import { CalendarDateRangePicker } from "@/components/dashboard/components/date-range-picker"
-import { MainNav } from "@/components/dashboard/components/main-nav"
 import { Overview } from "@/components/dashboard/components/overview"
 import { RecentSales } from "@/components/dashboard/components/recent-sales"
+import { Topmenu } from "@/components/dashboard/components/topmenu"
 // import { Search } from "@/components/dashboard/components/search"
-import TeamSwitcher from "@/components/dashboard/components/team-switcher"
 // import { UserNav } from "@/components/dashboard/components/user-nav"
 
 export function DashboardPage() {
   return (
     <>
       <div className="flex-col md:flex">
-        <div className="border-b">
-          <div className="flex h-16 items-center px-4">
-            <TeamSwitcher />
-            <MainNav className="mx-6" />
-          </div>
-        </div>
+        <Topmenu/>
         <header className="flex flex-col items-center gap-2 py-6 text-center md:py-10 md:gap-4">
           <div className="flex items-center gap-2">
             <PackageIcon className="w-8 h-8" />
