@@ -12,13 +12,13 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs"
-// import { CalendarDateRangePicker } from "@/components/dashboard/components/date-range-picker"
+import { CalendarDateRangePicker } from "@/components/dashboard/components/date-range-picker"
 import { MainNav } from "@/components/dashboard/components/main-nav"
 import { Overview } from "@/components/dashboard/components/overview"
 import { RecentSales } from "@/components/dashboard/components/recent-sales"
-// import { Search } from "@/components/dashboard/components/search"
+import { Search } from "@/components/dashboard/components/search"
 import TeamSwitcher from "@/components/dashboard/components/team-switcher"
-// import { UserNav } from "@/components/dashboard/components/user-nav"
+import { UserNav } from "@/components/dashboard/components/user-nav"
 
 export function DashboardPage() {
   return (
@@ -28,22 +28,19 @@ export function DashboardPage() {
           <div className="flex h-16 items-center px-4">
             <TeamSwitcher />
             <MainNav className="mx-6" />
+            <div className="ml-auto flex items-center space-x-4">
+              <Search />
+              <UserNav />
+            </div>
           </div>
         </div>
-        <header className="flex flex-col items-center gap-2 py-6 text-center md:py-10 md:gap-4">
-          <div className="flex items-center gap-2">
-            <PackageIcon className="w-8 h-8" />
-            <ChevronRightIcon className="w-6 h-6 opacity-25" />
-            <FlagIcon className="w-8 h-8" />
-          </div>
-          <div className="flex flex-col gap-1">
-            <h1 className="text-3xl font-bold">Senegal Presidential Election</h1>
-            <p className="text-sm tracking-wide sm:text-base">Candidate Performance Dashboard</p>
-          </div>
-        </header>
         <div className="flex-1 space-y-4 p-8 pt-6">
           <div className="flex items-center justify-between space-y-2">
             <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
+            <div className="flex items-center space-x-2">
+              <CalendarDateRangePicker />
+              <Button>Download</Button>
+            </div>
           </div>
           <Tabs defaultValue="overview" className="space-y-4">
             <TabsList>
@@ -188,68 +185,5 @@ export function DashboardPage() {
         </div>
       </div>
     </>
-  )
-}
-
-function PackageIcon(props: any) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m7.5 4.27 9 5.15" />
-      <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
-      <path d="m3.3 7 8.7 5 8.7-5" />
-      <path d="M12 22V12" />
-    </svg>
-  )
-}
-
-
-function ChevronRightIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m9 18 6-6-6-6" />
-    </svg>
-  )
-}
-
-
-function FlagIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
-      <line x1="4" x2="4" y1="22" y2="15" />
-    </svg>
   )
 }
