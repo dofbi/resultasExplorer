@@ -16,7 +16,7 @@ export function ChartRegional() {
             </Card>
            
                 
-            </div>
+        </div>
     )
 
 }
