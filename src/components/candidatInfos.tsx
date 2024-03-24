@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card"
 
-const CandidatInfos = ({ nom,img }) => {
+const CandidatInfos = (props:any) => {
     return (
         <Card>
         <CardHeader className="flex flex-col items-center space-y-0">
@@ -8,14 +8,14 @@ const CandidatInfos = ({ nom,img }) => {
             alt="Candidate"
             className="rounded-full"
             height="96"
-            src={`/img/${img}.png`}
+            src={`/img/${props.img}.png`}
             style={{
               aspectRatio: "96/96",
               objectFit: "cover",
             }}
             width="96"
           />
-          <CardTitle className="text-xl font-bold">{nom}</CardTitle>
+          <CardTitle className="text-xl font-bold">{props.nom}</CardTitle>
           <CardDescription className="text-sm font-medium">Independent</CardDescription>
         </CardHeader>
         <CardContent className="flex flex-col items-center space-y-2">

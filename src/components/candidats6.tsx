@@ -5,7 +5,7 @@
 import { CardTitle, CardDescription, CardHeader, Card, CardContent } from "@/components/ui/card"
 import { RecentSales } from "./dashboard/components/recent-sales"
 
-export function Candidats6(props) {
+export function Candidats6(props:any) {
   return (
     <Card className="w-full max-w-3xl">
       <CardHeader className="flex flex-col gap-1">
