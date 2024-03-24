@@ -16,6 +16,7 @@ import {
 import { Overview } from "@/components/dashboard/components/overview"
 import { RecentSales } from "@/components/dashboard/components/recent-sales"
 import { Topmenu } from "@/components/dashboard/components/topmenu"
+import { Footer } from "@/components/dashboard/components/footer"
 // import { Search } from "@/components/dashboard/components/search"
 // import { UserNav } from "@/components/dashboard/components/user-nav"
 
@@ -181,6 +182,7 @@ export function DashboardPage() {
           </Tabs>
         </div>
       </div>
+      <Footer/>
     </>
   )
 }
