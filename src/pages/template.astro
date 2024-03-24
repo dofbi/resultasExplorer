@@ -1,6 +1,10 @@
 ---
 import "@/styles/globals.css";
 import { HeaderComponent } from "../components/candidats/header-component";
+import { CardCandidat } from "../components/candidats/card-candidat";
+import { CarteRegion } from "../components/candidats/carte-region";
+import { ChartRegional } from "../components/candidats/chart-regional";
+import { FooterComponent } from "../components/candidats/footer-component";
 import Layout from "../layouts/BaseLayout.astro";
 ---
 
@@ -10,6 +14,13 @@ import Layout from "../layouts/BaseLayout.astro";
   <h1>Components</h1>
   <h2>Component: HeaderComponent</h2>
   <HeaderComponent client:load />
-  <h2>Component:</h2>
+  <h2>Component: CardCandidat</h2>
+  <CardCandidat />
+  <h2>Component: CarteRegion</h2>
+  <CarteRegion />
+  <h2>Component: ChartRegional</h2>
+  <ChartRegional />
+  <h2>Component: FooterComponent</h2>
+  <FooterComponent />
   <!-- <HomeTree /> -->
 </Layout>
