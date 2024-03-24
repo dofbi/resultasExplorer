@@ -23,28 +23,55 @@ import {TabsTriger} from "@/components/dashboard/components/tabsTriger"
 import{Candidats8} from '@/components/candidats8';
 import{Candidats6} from '@/components/candidats6';
 import { CarteRegion } from "../candidats/carte-region"
-import {CandidatInfos} from "../candidatInfos";
+import CandidatInfos from "../candidatInfos"
+// import {CandidatInfos} from "../candidatInfos"; 
 
 
 export function DashboardPage() {
   const candidats = [
     {
       nom: "Mamadou Diop",
-      parti: "Parti du Renouveau Sénégalais (PRS)"
+      parti: "Parti du Renouveau Sénégalais (PRS)",
+      img : "Aliou Mamadou DIA"
     },
     {
       nom: "Aminata Ndiaye",
-      parti: "Coalition Espoir pour le Sénégal"
+      parti: "Coalition Espoir pour le Sénégal",
+      img : "Aliou Mamadou DIA"
     },
     {
       nom: "Ousmane Diallo",
-      parti: "Alliance pour la République (APR)"
+      parti: "Alliance pour la République (APR)",
+      img : "Aliou Mamadou DIA"
     },
     {
       nom: "Fatoumata Sow",
-      parti: "Mouvement pour la Renaissance du Sénégal (MRS)"
+      parti: "Mouvement pour la Renaissance du Sénégal (MRS)",
+      img : "Aliou Mamadou DIA"
+    },
+    {
+      nom: "Mamadou Diop",
+      parti: "Parti du Renouveau Sénégalais (PRS)",
+      img : "Aliou Mamadou DIA"
+    },
+    {
+      nom: "Aminata Ndiaye",
+      parti: "Coalition Espoir pour le Sénégal",
+      img : "Aliou Mamadou DIA"
+    },
+    {
+      nom: "Ousmane Diallo",
+      parti: "Alliance pour la République (APR)",
+      img : "Aliou Mamadou DIA"
+    },
+    {
+      nom: "Fatoumata Sow",
+      parti: "Mouvement pour la Renaissance du Sénégal (MRS)",
+      img : "Aliou Mamadou DIA"
     }
   ]
+
+  const tabsCandidat = 0;
   return (
     <>
       <div className="flex-col md:flex">
@@ -198,7 +225,20 @@ export function DashboardPage() {
             </TabsContent>
           </Tabs>
          
-          <Candidats8 />
+          <div>
+          <div className="grid gap-4 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+              {
+                    candidats.map((ca, index) => {
+                      return (
+                          <div key={index}>
+                                <CandidatInfos nom={ca.nom} img={ca.img} />
+                          </div>
+                      )
+                  })
+              }
+            </div>
+          </div>
+        
           
           <div className="grid grid-cols-2 gap-4">
               <div>
