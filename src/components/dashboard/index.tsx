@@ -315,7 +315,7 @@ function PackageIcon(props: any) {
 }
 
 
-function ChevronRightIcon(props) {
+function ChevronRightIcon(props: any) {
   return (
     <svg
       {...props}
@@ -335,7 +335,7 @@ function ChevronRightIcon(props) {
 }
 
 
-function FlagIcon(props) {
+function FlagIcon(props: any) {
   return (
     <svg
       {...props}

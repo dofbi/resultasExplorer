@@ -268,7 +268,7 @@ export function Home5() {
 }
 
 
-function Package2Icon(props) {
+function Package2Icon(props: any) {
   return (
     <svg
       {...props}
@@ -290,7 +290,7 @@ function Package2Icon(props) {
 }
 
 
-function CalendarIcon(props) {
+function CalendarIcon(props: any) {
   return (
     <svg
       {...props}
@@ -313,7 +313,7 @@ function CalendarIcon(props) {
 }
 
 
-function BookmarkIcon(props) {
+function BookmarkIcon(props: any) {
   return (
     <svg
       {...props}
@@ -333,7 +333,7 @@ function BookmarkIcon(props) {
 }
 
 
-function UserIcon(props) {
+function UserIcon(props: any) {
   return (
     <svg
       {...props}
@@ -354,7 +354,7 @@ function UserIcon(props) {
 }
 
 
-function MapPinIcon(props) {
+function MapPinIcon(props: any) {
   return (
     <svg
       {...props}

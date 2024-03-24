@@ -68,7 +68,7 @@ export function Candidats4() {
 }
 
 
-function MapIcon(props) {
+function MapIcon(props: any) {
   return (
     <svg
       {...props}

@@ -81,7 +81,7 @@ export function Home4() {
 }
 
 
-function CalendarIcon(props) {
+function CalendarIcon(props: any) {
   return (
     <svg
       {...props}
@@ -104,7 +104,7 @@ function CalendarIcon(props) {
 }
 
 
-function MapPinIcon(props) {
+function MapPinIcon(props: any) {
   return (
     <svg
       {...props}
@@ -125,7 +125,7 @@ function MapPinIcon(props) {
 }
 
 
-function UsersIcon(props) {
+function UsersIcon(props: any) {
   return (
     <svg
       {...props}
@@ -148,7 +148,7 @@ function UsersIcon(props) {
 }
 
 
-function CheckCircleIcon(props) {
+function CheckCircleIcon(props: any) {
   return (
     <svg
       {...props}
@@ -169,7 +169,7 @@ function CheckCircleIcon(props) {
 }
 
 
-function Maximize2Icon(props) {
+function Maximize2Icon(props: any) {
   return (
     <svg
       {...props}

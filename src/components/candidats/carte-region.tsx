@@ -5,7 +5,7 @@ export function CarteRegion() {
     return (
       <div className="map__image sm:ml-10">
        
-           <svg xmlns="http://www.w3.org/1000/svg" xmlns:amcharts="http://amcharts.com/ammap" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 350 620 790">
+           <svg xmlns="http://www.w3.org/1000/svg" version="1.1" viewBox="0 350 620 790">
                                  
                                  <g >
                                     

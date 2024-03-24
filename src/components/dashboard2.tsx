@@ -140,7 +140,7 @@ export function dashboard2() {
 }
 
 
-function UsersIcon(props) {
+function UsersIcon(props: any) {
   return (
     <svg
       {...props}
@@ -163,7 +163,7 @@ function UsersIcon(props) {
 }
 
 
-function CheckIcon(props) {
+function CheckIcon(props: any) {
   return (
     <svg
       {...props}
@@ -183,7 +183,7 @@ function CheckIcon(props) {
 }
 
 
-function ClockIcon(props) {
+function ClockIcon(props: any) {
   return (
     <svg
       {...props}
@@ -204,7 +204,7 @@ function ClockIcon(props) {
 }
 
 
-function BarChart(props) {
+function BarChart(props: any) {
   return (
     <div {...props}>
       <ResponsiveBar
