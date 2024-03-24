@@ -190,12 +190,49 @@ export function DashboardPage() {
           <Candidats8 />
           
           <div className="grid grid-cols-2 gap-4">
-               <div>
-               <Candidats6 />
+              <div>
+               <Candidats6 nom="DAKAR" />
                </div>
                <div>
-               <Candidats6 />
+               <Candidats6 nom="THIES"/>
                </div>
+               <div>
+               <Candidats6 nom="DIOURBEL"/>
+               </div>
+               <div>
+               <Candidats6 nom="FATICK"/>
+               </div>
+               <div>
+               <Candidats6 nom="KAFFRINE" />
+               </div>
+               <div>
+               <Candidats6 nom="KAOLACK" />
+               </div>
+               <div>
+               <Candidats6 nom ="KEDOUGOU"/>
+               </div>
+               <div>
+               <Candidats6 nom ="KOLDA"/>
+               </div>
+               <div>
+               <Candidats6 nom ="LOUGA"/>
+               </div>
+               <div>
+               <Candidats6 nom ="MATAM"/>
+               </div>
+               <div>
+               <Candidats6 nom ="SAINT-LOUIS"/>
+               </div>
+               <div>
+               <Candidats6 nom ="SEDHIOU"/>
+               </div>
+               <div>
+               <Candidats6 nom ="TAMBACOUNDA"/>
+               </div>
+               <div>
+               <Candidats6 nom ="ZIGUINCHOR"/>
+               </div>
+             
           </div>
         </div>
       </div>

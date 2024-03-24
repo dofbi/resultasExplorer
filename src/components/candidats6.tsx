@@ -5,11 +5,11 @@
 import { CardTitle, CardDescription, CardHeader, Card, CardContent } from "@/components/ui/card"
 import { RecentSales } from "./dashboard/components/recent-sales"
 
-export function Candidats6() {
+export function Candidats6(props) {
   return (
     <Card className="w-full max-w-3xl">
       <CardHeader className="flex flex-col gap-1">
-        <CardTitle className="text-2xl">Dakar</CardTitle>
+        <CardTitle className="text-2xl">{props.nom}</CardTitle>
         <CardDescription>Essential information about the candidate's performance.</CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col gap-4">
