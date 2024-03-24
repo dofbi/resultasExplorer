@@ -100,7 +100,7 @@ export function Home() {
 }
 
 
-function PackageIcon(props) {
+function PackageIcon(props: any) {
   return (
     <svg
       {...props}
@@ -123,7 +123,7 @@ function PackageIcon(props) {
 }
 
 
-function ChevronRightIcon(props) {
+function ChevronRightIcon(props: any) {
   return (
     <svg
       {...props}
@@ -143,7 +143,7 @@ function ChevronRightIcon(props) {
 }
 
 
-function FlagIcon(props) {
+function FlagIcon(props: any) {
   return (
     <svg
       {...props}
@@ -164,7 +164,7 @@ function FlagIcon(props) {
 }
 
 
-function UserIcon(props) {
+function UserIcon(props: any) {
   return (
     <svg
       {...props}
@@ -185,7 +185,7 @@ function UserIcon(props) {
 }
 
 
-function User2Icon(props) {
+function User2Icon(props: any) {
   return (
     <svg
       {...props}

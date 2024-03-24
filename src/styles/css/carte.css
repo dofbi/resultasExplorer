@@ -1,0 +1,53 @@
+.map__image {
+    width: 70%;
+    height: 40px;
+    margin-left: 60px;
+   
+}
+
+.map__image path {
+    fill: #a4ced2;
+    stroke: #FFF;
+    stroke-width: 1px;
+    transition: fill 0.3s;
+   
+}
+
+.map__image path:hover {
+    fill: #088792;
+    stroke: #FFF;
+    stroke-width: 1px;
+    transition: fill 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+    .map__image {
+        margin-left: 60px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+.map__image {
+    width: 61%;
+    height: 350px !important;
+    margin-left: 160px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+}
+
+
+.them_df{
+    fill: #088792;
+    stroke: #FFF;
+    stroke-width: 1px;
+}
+
+ .them_bdf{
+    fill: #FFF !important;
+    background-color: red !important;
+    stroke: #FFF;
+    stroke-width: 1px;
+}

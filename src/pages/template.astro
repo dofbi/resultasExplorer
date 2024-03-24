@@ -1,0 +1,62 @@
+---
+import "@/styles/globals.css";
+import { HeaderComponent } from "../components/candidats/header-component";
+import { CardCandidat } from "../components/candidats/card-candidat";
+import { CarteRegion } from "../components/candidats/carte-region";
+import { ChartRegional } from "../components/candidats/chart-regional";
+import { FooterComponent } from "../components/candidats/footer-component";
+import Layout from "../layouts/BaseLayout.astro";
+import { CardResultCandidat } from "../components/candidats/card-result-candidat";
+import { HomeTree } from "../components/hometree";
+import { Candidats3 } from "../components/candidats3";
+import { Candidats4 } from "../components/candidats4";
+import { Candidats5 } from "../components/candidats5";
+import { Candidats6 } from "../components/candidats6";
+import { Candidats7 } from "../components/candidats7";
+import { Candidats8 } from "../components/candidats8";
+import { CandidatsDeux } from "../components/CandidatsDeux";
+import { Home } from "../components/home";
+import { Home2 } from "../components/home2";
+import { Home4 } from "../components/home4";
+import { Home5 } from "../components/home5";
+---
+
+---
+
+<Layout title="Résultat provisoire élection présidentielle Sénégal 2024">
+  <h1>Components</h1>
+  <h2>Component: HeaderComponent</h2>
+  <HeaderComponent client:load />
+  <h2>Component: CardCandidat</h2>
+  <CardCandidat />
+  <h2>Component: CarteRegion</h2>
+  <CarteRegion />
+  <h2>Component: ChartRegional</h2>
+  <ChartRegional />
+  <h2>Component: FooterComponent</h2>
+  <FooterComponent />
+  <h2>component : CardResultCandidat</h2>
+  <CardResultCandidat />
+  <h2>candidat 3</h2>
+  <Candidats3 />
+  <h2>candidat 4</h2>
+  <Candidats4 />
+  <h2>candidat 5</h2>
+  <Candidats5 />
+  <h2>candidat 6</h2>
+  <Candidats6 />
+  <h2>candidat 7</h2>
+  <Candidats7 />
+  <h2>candidat 8</h2>
+  <Candidats8 />
+  <h2>CandidatsDeux</h2>
+  <CandidatsDeux />
+  <h2>Home</h2>
+  <Home />
+  <h2>Home 2</h2>
+  <Home2 />
+  <h2>Home 4</h2>
+  <Home4 />
+  <h2>Hometree</h2>
+  <HomeTree />
+</Layout>

@@ -5,8 +5,8 @@
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { CardTitle, CardDescription, CardHeader, CardContent, Card } from "@/components/ui/card"
-import { ResponsivePie } from "@nivo/pie"
-import { ResponsiveLine } from "@nivo/line"
+// import { ResponsivePie } from "@nivo/pie"
+// import { ResponsiveLine } from "@nivo/line"
 import { TableHead, TableRow, TableHeader, TableCell, TableBody, Table } from "@/components/ui/table"
 
 export function HomeTree() {
@@ -62,7 +62,7 @@ export function HomeTree() {
               <CardDescription className="ml-auto">5,231,982</CardDescription>
             </CardHeader>
             <CardContent>
-              <LabelledpieChart className="w-full aspect-[1/1]" />
+              {/* <LabelledpieChart className="w-full aspect-[1/1]" /> */}
             </CardContent>
           </Card>
           <Card>
@@ -71,7 +71,7 @@ export function HomeTree() {
               <CardDescription className="ml-auto">+70%</CardDescription>
             </CardHeader>
             <CardContent>
-              <FilledtimeseriesChart className="w-full aspect-[2/1]" />
+              {/* <FilledtimeseriesChart className="w-full aspect-[2/1]" /> */}
             </CardContent>
           </Card>
         </div>
@@ -118,7 +118,7 @@ export function HomeTree() {
 }
 
 
-function ChevronRightIcon(props) {
+function ChevronRightIcon(props: any) {
   return (
     <svg
       {...props}
@@ -138,7 +138,7 @@ function ChevronRightIcon(props) {
 }
 
 
-function SearchIcon(props) {
+function SearchIcon(props: any) {
   return (
     <svg
       {...props}
@@ -159,131 +159,131 @@ function SearchIcon(props) {
 }
 
 
-function LabelledpieChart(props) {
-  return (
-    <div {...props}>
-      <ResponsivePie
-        data={[
-          { id: "Jan", value: 111 },
-          { id: "Feb", value: 157 },
-          { id: "Mar", value: 129 },
-          { id: "Apr", value: 150 },
-          { id: "May", value: 119 },
-          { id: "Jun", value: 72 },
-        ]}
-        sortByValue
-        margin={{ top: 30, right: 50, bottom: 30, left: 50 }}
-        innerRadius={0.5}
-        padAngle={1}
-        cornerRadius={3}
-        activeOuterRadiusOffset={2}
-        borderWidth={1}
-        arcLinkLabelsThickness={1}
-        enableArcLabels={false}
-        colors={["#2563eb"]}
-        theme={{
-          tooltip: {
-            chip: {
-              borderRadius: "9999px",
-            },
-            container: {
-              fontSize: "12px",
-              textTransform: "capitalize",
-              borderRadius: "6px",
-            },
-          },
-        }}
-        role="application"
-      />
-    </div>
-  )
-}
+// function LabelledpieChart(props: any) {
+//   return (
+//     <div {...props}>
+//       <div
+//         data={[
+//           { id: "Jan", value: 111 },
+//           { id: "Feb", value: 157 },
+//           { id: "Mar", value: 129 },
+//           { id: "Apr", value: 150 },
+//           { id: "May", value: 119 },
+//           { id: "Jun", value: 72 },
+//         ]}
+//         sortByValue
+//         margin={{ top: 30, right: 50, bottom: 30, left: 50 }}
+//         innerRadius={0.5}
+//         padAngle={1}
+//         cornerRadius={3}
+//         activeOuterRadiusOffset={2}
+//         borderWidth={1}
+//         arcLinkLabelsThickness={1}
+//         enableArcLabels={false}
+//         colors={["#2563eb"]}
+//         theme={{
+//           tooltip: {
+//             chip: {
+//               borderRadius: "9999px",
+//             },
+//             container: {
+//               fontSize: "12px",
+//               textTransform: "capitalize",
+//               borderRadius: "6px",
+//             },
+//           },
+//         }}
+//         role="application"
+//       />
+//     </div>
+//   )
+// }
 
 
-function FilledtimeseriesChart(props) {
-  return (
-    <div {...props}>
-      <ResponsiveLine
-        data={[
-          {
-            id: "Desktop",
-            data: [
-              { x: "Jan", y: 43 },
-              { x: "Feb", y: 137 },
-              { x: "Mar", y: 61 },
-              { x: "Apr", y: 145 },
-              { x: "May", y: 26 },
-              { x: "Jun", y: 154 },
-            ],
-          },
-          {
-            id: "Mobile",
-            data: [
-              { x: "Jan", y: 60 },
-              { x: "Feb", y: 48 },
-              { x: "Mar", y: 177 },
-              { x: "Apr", y: 78 },
-              { x: "May", y: 96 },
-              { x: "Jun", y: 204 },
-            ],
-          },
-        ]}
-        margin={{ top: 10, right: 10, bottom: 40, left: 40 }}
-        xScale={{
-          type: "point",
-        }}
-        yScale={{
-          type: "linear",
-          min: 0,
-          max: "auto",
-        }}
-        axisTop={null}
-        axisRight={null}
-        axisBottom={{
-          tickSize: 0,
-          tickPadding: 16,
-        }}
-        axisLeft={{
-          tickSize: 0,
-          tickValues: 5,
-          tickPadding: 16,
-        }}
-        colors={["#2563eb", "#e11d48"]}
-        pointSize={6}
-        useMesh={true}
-        curve="monotoneX"
-        enableArea={true}
-        gridYValues={6}
-        defs={[
-          {
-            id: "line-chart-gradient",
-            type: "linearGradient",
-            colors: [
-              { offset: 0, color: "inherit" },
-              { offset: 200, color: "inherit", opacity: 0 },
-            ],
-          },
-        ]}
-        fill={[{ match: "*", id: "line-chart-gradient" }]}
-        theme={{
-          tooltip: {
-            chip: {
-              borderRadius: "9999px",
-            },
-            container: {
-              fontSize: "12px",
-              textTransform: "capitalize",
-              borderRadius: "6px",
-            },
-          },
-          grid: {
-            line: {
-              stroke: "#f3f4f6",
-            },
-          },
-        }}
-        role="application"
-      />
-    </div>
-  )
-}
+// function FilledtimeseriesChart(props: any) {
+//   return (
+//     <div {...props}>
+//       <div
+//         data={[
+//           {
+//             id: "Desktop",
+//             data: [
+//               { x: "Jan", y: 43 },
+//               { x: "Feb", y: 137 },
+//               { x: "Mar", y: 61 },
+//               { x: "Apr", y: 145 },
+//               { x: "May", y: 26 },
+//               { x: "Jun", y: 154 },
+//             ],
+//           },
+//           {
+//             id: "Mobile",
+//             data: [
+//               { x: "Jan", y: 60 },
+//               { x: "Feb", y: 48 },
+//               { x: "Mar", y: 177 },
+//               { x: "Apr", y: 78 },
+//               { x: "May", y: 96 },
+//               { x: "Jun", y: 204 },
+//             ],
+//           },
+//         ]}
+//         margin={{ top: 10, right: 10, bottom: 40, left: 40 }}
+//         xScale={{
+//           type: "point",
+//         }}
+//         yScale={{
+//           type: "linear",
+//           min: 0,
+//           max: "auto",
+//         }}
+//         axisTop={null}
+//         axisRight={null}
+//         axisBottom={{
+//           tickSize: 0,
+//           tickPadding: 16,
+//         }}
+//         axisLeft={{
+//           tickSize: 0,
+//           tickValues: 5,
+//           tickPadding: 16,
+//         }}
+//         colors={["#2563eb", "#e11d48"]}
+//         pointSize={6}
+//         useMesh={true}
+//         curve="monotoneX"
+//         enableArea={true}
+//         gridYValues={6}
+//         defs={[
+//           {
+//             id: "line-chart-gradient",
+//             type: "linearGradient",
+//             colors: [
+//               { offset: 0, color: "inherit" },
+//               { offset: 200, color: "inherit", opacity: 0 },
+//             ],
+//           },
+//         ]}
+//         fill={[{ match: "*", id: "line-chart-gradient" }]}
+//         theme={{
+//           tooltip: {
+//             chip: {
+//               borderRadius: "9999px",
+//             },
+//             container: {
+//               fontSize: "12px",
+//               textTransform: "capitalize",
+//               borderRadius: "6px",
+//             },
+//           },
+//           grid: {
+//             line: {
+//               stroke: "#f3f4f6",
+//             },
+//           },
+//         }}
+//         role="application"
+//       />
+//     </div>
+//   )
+// }

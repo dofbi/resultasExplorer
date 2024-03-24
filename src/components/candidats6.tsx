@@ -3,12 +3,13 @@
  * @see https://v0.dev/t/Kc6sSYnMKNO
  */
 import { CardTitle, CardDescription, CardHeader, Card, CardContent } from "@/components/ui/card"
+import { RecentSales } from "./dashboard/components/recent-sales"
 
-export function Candidats6() {
+export function Candidats6(props:any) {
   return (
     <Card className="w-full max-w-3xl">
       <CardHeader className="flex flex-col gap-1">
-        <CardTitle className="text-2xl">Candidate Dashboard</CardTitle>
+        <CardTitle className="text-2xl">{props.nom}</CardTitle>
         <CardDescription>Essential information about the candidate's performance.</CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col gap-4">
@@ -23,48 +24,18 @@ export function Candidats6() {
           </Card>
         </div>
         <Card>
-          <CardHeader className="pb-2">
-            <CardTitle className="text-sm font-medium">Votes by Region</CardTitle>
-            <CardDescription className="text-xs">Percentage of votes in each region</CardDescription>
-          </CardHeader>
-          <CardContent className="p-0">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-0.5">
-              <div className="flex items-center justify-between px-4 py-2 text-sm bg-gray-100 border-t last:border-t-0 dark:bg-gray-800">
-                <div>Thiès</div>
-                <div className="font-semibold">23%</div>
-              </div>
-              <div className="flex items-center justify-between px-4 py-2 text-sm bg-gray-100 border-t last:border-t-0 dark:bg-gray-800">
-                <div>Kaolack</div>
-                <div className="font-semibold">17%</div>
-              </div>
-              <div className="flex items-center justify-between px-4 py-2 text-sm bg-gray-100 border-t last:border-t-0 dark:bg-gray-800">
-                <div>Ziguinchor</div>
-                <div className="font-semibold">12%</div>
-              </div>
-              <div className="flex items-center justify-between px-4 py-2 text-sm bg-gray-100 border-t last:border-t-0 dark:bg-gray-800">
-                <div>Louga</div>
-                <div className="font-semibold">8%</div>
-              </div>
-              <div className="flex items-center justify-between px-4 py-2 text-sm bg-gray-100 border-t last:border-t-0 dark:bg-gray-800">
-                <div>Kolda</div>
-                <div className="font-semibold">5%</div>
-              </div>
-              <div className="flex items-center justify-between px-4 py-2 text-sm bg-gray-100 border-t last:border-t-0 dark:bg-gray-800">
-                <div>Matam</div>
-                <div className="font-semibold">3%</div>
-              </div>
-              <div className="flex items-center justify-between px-4 py-2 text-sm bg-gray-100 border-t last:border-t-0 dark:bg-gray-800">
-                <div>Kaffrine</div>
-                <div className="font-semibold">2%</div>
-              </div>
-              <div className="flex items-center justify-between px-4 py-2 text-sm bg-gray-100 border-t last:border-t-0 dark:bg-gray-800">
-                <div>Sédhiou</div>
-                <div className="font-semibold">1%</div>
-              </div>
-            </div>
-          </CardContent>
+              <CardHeader>
+                          <CardTitle>Recent Sales</CardTitle>
+                          <CardDescription>
+                            You made 265 sales this month.
+                          </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <RecentSales />
+                        </CardContent>
+                      </Card>
+            </CardContent>
         </Card>
-      </CardContent>
-    </Card>
+   
   )
 }

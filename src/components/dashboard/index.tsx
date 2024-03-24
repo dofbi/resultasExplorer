@@ -13,23 +13,69 @@ import {
   TabsTrigger,
 } from "@/components/ui/tabs"
 // import { CalendarDateRangePicker } from "@/components/dashboard/components/date-range-picker"
-import { MainNav } from "@/components/dashboard/components/main-nav"
 import { Overview } from "@/components/dashboard/components/overview"
 import { RecentSales } from "@/components/dashboard/components/recent-sales"
+import { Topmenu } from "@/components/dashboard/components/topmenu"
+import { Footer } from "@/components/dashboard/components/footer"
 // import { Search } from "@/components/dashboard/components/search"
-import TeamSwitcher from "@/components/dashboard/components/team-switcher"
 // import { UserNav } from "@/components/dashboard/components/user-nav"
+import {TabsTriger} from "@/components/dashboard/components/tabsTriger"
+import{Candidats8} from '@/components/candidats8';
+import{Candidats6} from '@/components/candidats6';
+import { CarteRegion } from "../candidats/carte-region"
+import CandidatInfos from "../candidatInfos"
+// import {CandidatInfos} from "../candidatInfos"; 
+
 
 export function DashboardPage() {
+  const candidats = [
+    {
+      nom: "Mamadou Diop",
+      parti: "Parti du Renouveau Sénégalais (PRS)",
+      img : "Aliou Mamadou DIA"
+    },
+    {
+      nom: "Aminata Ndiaye",
+      parti: "Coalition Espoir pour le Sénégal",
+      img : "Aliou Mamadou DIA"
+    },
+    {
+      nom: "Ousmane Diallo",
+      parti: "Alliance pour la République (APR)",
+      img : "Aliou Mamadou DIA"
+    },
+    {
+      nom: "Fatoumata Sow",
+      parti: "Mouvement pour la Renaissance du Sénégal (MRS)",
+      img : "Aliou Mamadou DIA"
+    },
+    {
+      nom: "Mamadou Diop",
+      parti: "Parti du Renouveau Sénégalais (PRS)",
+      img : "Aliou Mamadou DIA"
+    },
+    {
+      nom: "Aminata Ndiaye",
+      parti: "Coalition Espoir pour le Sénégal",
+      img : "Aliou Mamadou DIA"
+    },
+    {
+      nom: "Ousmane Diallo",
+      parti: "Alliance pour la République (APR)",
+      img : "Aliou Mamadou DIA"
+    },
+    {
+      nom: "Fatoumata Sow",
+      parti: "Mouvement pour la Renaissance du Sénégal (MRS)",
+      img : "Aliou Mamadou DIA"
+    }
+  ]
+
+  const tabsCandidat = 0;
   return (
     <>
       <div className="flex-col md:flex">
-        <div className="border-b">
-          <div className="flex h-16 items-center px-4">
-            <TeamSwitcher />
-            <MainNav className="mx-6" />
-          </div>
-        </div>
+        <Topmenu/>
         <header className="flex flex-col items-center gap-2 py-6 text-center md:py-10 md:gap-4">
           <div className="flex items-center gap-2">
             <PackageIcon className="w-8 h-8" />
@@ -46,18 +92,11 @@ export function DashboardPage() {
             <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
           </div>
           <Tabs defaultValue="overview" className="space-y-4">
-            <TabsList>
+            {/* <TabsList>
               <TabsTrigger value="overview">Overview</TabsTrigger>
-              <TabsTrigger value="analytics" disabled>
-                Analytics
-              </TabsTrigger>
-              <TabsTrigger value="reports" disabled>
-                Reports
-              </TabsTrigger>
-              <TabsTrigger value="notifications" disabled>
-                Notifications
-              </TabsTrigger>
-            </TabsList>
+                   
+            </TabsList> */}
+              <TabsTriger /> 
             <TabsContent value="overview" className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
                 <Card>
@@ -173,20 +212,82 @@ export function DashboardPage() {
                 </Card>
                 <Card className="col-span-3">
                   <CardHeader>
-                    <CardTitle>Recent Sales</CardTitle>
+                    <CardTitle>Carte Régional</CardTitle>
                     <CardDescription>
                       You made 265 sales this month.
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <RecentSales />
+                     <CarteRegion />
                   </CardContent>
                 </Card>
               </div>
             </TabsContent>
           </Tabs>
+         
+          <div>
+          <div className="grid gap-4 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+              {
+                    candidats.map((ca, index) => {
+                      return (
+                          <div key={index}>
+                                <CandidatInfos nom={ca.nom} img={ca.img} />
+                          </div>
+                      )
+                  })
+              }
+            </div>
+          </div>
+        
+          
+          <div className="grid grid-cols-2 gap-4">
+              <div>
+               <Candidats6 nom="DAKAR" />
+               </div>
+               <div>
+               <Candidats6 nom="THIES"/>
+               </div>
+               <div>
+               <Candidats6 nom="DIOURBEL"/>
+               </div>
+               <div>
+               <Candidats6 nom="FATICK"/>
+               </div>
+               <div>
+               <Candidats6 nom="KAFFRINE" />
+               </div>
+               <div>
+               <Candidats6 nom="KAOLACK" />
+               </div>
+               <div>
+               <Candidats6 nom ="KEDOUGOU"/>
+               </div>
+               <div>
+               <Candidats6 nom ="KOLDA"/>
+               </div>
+               <div>
+               <Candidats6 nom ="LOUGA"/>
+               </div>
+               <div>
+               <Candidats6 nom ="MATAM"/>
+               </div>
+               <div>
+               <Candidats6 nom ="SAINT-LOUIS"/>
+               </div>
+               <div>
+               <Candidats6 nom ="SEDHIOU"/>
+               </div>
+               <div>
+               <Candidats6 nom ="TAMBACOUNDA"/>
+               </div>
+               <div>
+               <Candidats6 nom ="ZIGUINCHOR"/>
+               </div>
+             
+          </div>
         </div>
       </div>
+      <Footer/>
     </>
   )
 }
@@ -214,7 +315,7 @@ function PackageIcon(props: any) {
 }
 
 
-function ChevronRightIcon(props) {
+function ChevronRightIcon(props: any) {
   return (
     <svg
       {...props}
@@ -234,7 +335,7 @@ function ChevronRightIcon(props) {
 }
 
 
-function FlagIcon(props) {
+function FlagIcon(props: any) {
   return (
     <svg
       {...props}
