@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card"
 
-const  candidatInfos = (props:any)=>{
+export function CandidatInfo(props){
     return (
         <Card>
         <CardHeader className="flex flex-col items-center space-y-0">
@@ -31,4 +31,3 @@ const  candidatInfos = (props:any)=>{
       </Card>
     )
 }
-export default candidatInfos;

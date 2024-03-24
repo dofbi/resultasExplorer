@@ -23,6 +23,7 @@ import {TabsTriger} from "@/components/dashboard/components/tabsTriger"
 import{Candidats8} from '@/components/candidats8';
 import{Candidats6} from '@/components/candidats6';
 import { CarteRegion } from "../candidats/carte-region"
+import {CandidatInfos} from "../candidatInfos";
 
 
 export function DashboardPage() {
@@ -196,15 +197,8 @@ export function DashboardPage() {
               </div>
             </TabsContent>
           </Tabs>
-          candidats.map((ca, index) => {
-            return (
-                <div>
-                       <CandidatInfos nom={ca.nom} />
-                </div>
-            )
-           })
-        
-          {/* <Candidats8 /> */}
+         
+          <Candidats8 />
           
           <div className="grid grid-cols-2 gap-4">
               <div>
