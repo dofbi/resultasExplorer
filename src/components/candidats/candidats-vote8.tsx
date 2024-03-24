@@ -95,6 +95,154 @@ export function CandidatsVote8() {
           </div>
           <div />
         </div>
+        <div className="grid gap-2">
+          <div className="grid grid-cols-2 items-center gap-2">
+            <div className="flex items-center gap-2">
+              <img
+                alt="Candidate"
+                className="rounded-full"
+                height="40"
+                src="/placeholder.svg"
+                style={{
+                  aspectRatio: "40/40",
+                  objectFit: "cover",
+                }}
+                width="40"
+              />
+              <div className="flex flex-col">
+                <h3 className="font-semibold">Alice Johnson</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">#1 Candidate</p>
+              </div>
+            </div>
+            <div className="text-right">
+              <h3 className="font-semibold">42%</h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400">3500</p>
+            </div>
+          </div>
+          <div />
+          <div className="grid grid-cols-2 items-center gap-2">
+            <div className="flex items-center gap-2">
+              <img
+                alt="Candidate"
+                className="rounded-full"
+                height="40"
+                src="/placeholder.svg"
+                style={{
+                  aspectRatio: "40/40",
+                  objectFit: "cover",
+                }}
+                width="40"
+              />
+              <div className="flex flex-col">
+                <h3 className="font-semibold">Bob Smith</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">#2 Candidate</p>
+              </div>
+            </div>
+            <div className="text-right">
+              <h3 className="font-semibold">28%</h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400">2400</p>
+            </div>
+          </div>
+          <div />
+          <div className="grid grid-cols-2 items-center gap-2">
+            <div className="flex items-center gap-2">
+              <img
+                alt="Candidate"
+                className="rounded-full"
+                height="40"
+                src="/placeholder.svg"
+                style={{
+                  aspectRatio: "40/40",
+                  objectFit: "cover",
+                }}
+                width="40"
+              />
+              <div className="flex flex-col">
+                <h3 className="font-semibold">Eve Williams</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">#3 Candidate</p>
+              </div>
+            </div>
+            <div className="text-right">
+              <h3 className="font-semibold">20%</h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400">1700</p>
+            </div>
+          </div>
+          <div />
+        </div>
+        <div className="grid gap-2">
+          <div className="grid grid-cols-2 items-center gap-2">
+            <div className="flex items-center gap-2">
+              <img
+                alt="Candidate"
+                className="rounded-full"
+                height="40"
+                src="/placeholder.svg"
+                style={{
+                  aspectRatio: "40/40",
+                  objectFit: "cover",
+                }}
+                width="40"
+              />
+              <div className="flex flex-col">
+                <h3 className="font-semibold">Alice Johnson</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">#1 Candidate</p>
+              </div>
+            </div>
+            <div className="text-right">
+              <h3 className="font-semibold">42%</h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400">3500</p>
+            </div>
+          </div>
+          <div />
+          <div className="grid grid-cols-2 items-center gap-2">
+            <div className="flex items-center gap-2">
+              <img
+                alt="Candidate"
+                className="rounded-full"
+                height="40"
+                src="/placeholder.svg"
+                style={{
+                  aspectRatio: "40/40",
+                  objectFit: "cover",
+                }}
+                width="40"
+              />
+              <div className="flex flex-col">
+                <h3 className="font-semibold">Bob Smith</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">#2 Candidate</p>
+              </div>
+            </div>
+            <div className="text-right">
+              <h3 className="font-semibold">28%</h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400">2400</p>
+            </div>
+          </div>
+          <div />
+          <div className="grid grid-cols-2 items-center gap-2">
+            <div className="flex items-center gap-2">
+              <img
+                alt="Candidate"
+                className="rounded-full"
+                height="40"
+                src="/placeholder.svg"
+                style={{
+                  aspectRatio: "40/40",
+                  objectFit: "cover",
+                }}
+                width="40"
+              />
+              <div className="flex flex-col">
+                <h3 className="font-semibold">Eve Williams</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">#3 Candidate</p>
+              </div>
+            </div>
+            <div className="text-right">
+              <h3 className="font-semibold">20%</h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400">1700</p>
+            </div>
+          </div>
+          <div />
+        </div>
         <div />
         <div className="grid gap-2 md:grid-cols-2 lg:grid-cols-4">
           <div className="flex items-center gap-2">

@@ -20,8 +20,27 @@ import { Footer } from "@/components/dashboard/components/footer"
 // import { Search } from "@/components/dashboard/components/search"
 // import { UserNav } from "@/components/dashboard/components/user-nav"
 import {TabsTriger} from "@/components/dashboard/components/tabsTriger"
+import{Candidats8} from '@/components/candidats8';
 
 export function DashboardPage() {
+  candidats: [
+    {
+       nom: "Mamadou Diop",
+       parti: "Parti du Renouveau Sénégalais (PRS)"
+    },
+    {
+      nom: "Aminata Ndiaye",
+      parti: "Coalition Espoir pour le Sénégal"
+    },
+    {
+      nom: "Ousmane Diallo",
+      parti: "Alliance pour la République (APR)"
+    },
+    {
+      nom: "Fatoumata Sow",
+      parti: "Mouvement pour la Renaissance du Sénégal (MRS)"
+    }
+  ]
   return (
     <>
       <div className="flex-col md:flex">
@@ -174,6 +193,15 @@ export function DashboardPage() {
               </div>
             </TabsContent>
           </Tabs>
+          {/* candidats.map((region, index) => {
+            return (
+                <div>
+                          CandidatInfos
+                </div>
+            )
+           })
+         */}
+          <Candidats8 />
         </div>
       </div>
       <Footer/>
