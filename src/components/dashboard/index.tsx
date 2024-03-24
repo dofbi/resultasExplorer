@@ -26,7 +26,24 @@ import { CarteRegion } from "../candidats/carte-region"
 
 
 export function DashboardPage() {
-
+  const candidats = [
+    {
+      nom: "Mamadou Diop",
+      parti: "Parti du Renouveau Sénégalais (PRS)"
+    },
+    {
+      nom: "Aminata Ndiaye",
+      parti: "Coalition Espoir pour le Sénégal"
+    },
+    {
+      nom: "Ousmane Diallo",
+      parti: "Alliance pour la République (APR)"
+    },
+    {
+      nom: "Fatoumata Sow",
+      parti: "Mouvement pour la Renaissance du Sénégal (MRS)"
+    }
+  ]
   return (
     <>
       <div className="flex-col md:flex">
@@ -179,15 +196,15 @@ export function DashboardPage() {
               </div>
             </TabsContent>
           </Tabs>
-          {/* candidats.map((region, index) => {
+          candidats.map((ca, index) => {
             return (
                 <div>
-                          CandidatInfos
+                       <CandidatInfos nom={ca.nom} />
                 </div>
             )
            })
-         */}
-          <Candidats8 />
+        
+          {/* <Candidats8 /> */}
           
           <div className="grid grid-cols-2 gap-4">
               <div>

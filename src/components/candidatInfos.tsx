@@ -8,14 +8,14 @@ const  candidatInfos = (props:any)=>{
             alt="Candidate"
             className="rounded-full"
             height="96"
-            src="/placeholder.svg"
+            src="/Habib SY.png"
             style={{
               aspectRatio: "96/96",
               objectFit: "cover",
             }}
             width="96"
           />
-          <CardTitle className="text-xl font-bold">Mamadou Sall</CardTitle>
+          <CardTitle className="text-xl font-bold">{props.name}</CardTitle>
           <CardDescription className="text-sm font-medium">Independent</CardDescription>
         </CardHeader>
         <CardContent className="flex flex-col items-center space-y-2">
