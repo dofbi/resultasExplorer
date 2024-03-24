@@ -4,7 +4,7 @@
  */
 import { Button } from "@/components/ui/button"
 import { CardTitle, CardDescription, CardHeader, CardContent, Card } from "@/components/ui/card"
-import { ResponsiveBar } from "@nivo/bar"
+// import { ResponsiveBar } from "@nivo/bar"
 import { TableHead, TableRow, TableHeader, TableCell, TableBody, Table } from "@/components/ui/table"
 
 export function Home2() {
@@ -267,7 +267,7 @@ function UsersIcon(props) {
 function BarChart(props: any) {
   return (
     <div {...props}>
-      <ResponsiveBar
+      <div
         data={[
           { name: "Jan", count: 111 },
           { name: "Feb", count: 157 },

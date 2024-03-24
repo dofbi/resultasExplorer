@@ -3,7 +3,7 @@
  * @see https://v0.dev/t/EbiovqwwbbV
  */
 import { CardHeader, CardTitle, CardDescription, CardContent, Card } from "@/components/ui/card"
-import { ResponsiveLine } from "@nivo/line"
+// import { ResponsiveLine } from "@nivo/line"
 
 export function Candidats7() {
   return (
@@ -54,7 +54,7 @@ export function Candidats7() {
 function CurvedlineChart(props) {
   return (
     <div {...props}>
-      <ResponsiveLine
+      <div
         data={[
           {
             id: "Desktop",

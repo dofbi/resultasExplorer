@@ -5,8 +5,8 @@
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { CardTitle, CardDescription, CardHeader, CardContent, Card } from "@/components/ui/card"
-import { ResponsivePie } from "@nivo/pie"
-import { ResponsiveLine } from "@nivo/line"
+// import { ResponsivePie } from "@nivo/pie"
+// import { ResponsiveLine } from "@nivo/line"
 import { TableHead, TableRow, TableHeader, TableCell, TableBody, Table } from "@/components/ui/table"
 
 export function HomeTree() {
@@ -162,7 +162,7 @@ function SearchIcon(props) {
 function LabelledpieChart(props) {
   return (
     <div {...props}>
-      <ResponsivePie
+      <div
         data={[
           { id: "Jan", value: 111 },
           { id: "Feb", value: 157 },
@@ -203,7 +203,7 @@ function LabelledpieChart(props) {
 function FilledtimeseriesChart(props) {
   return (
     <div {...props}>
-      <ResponsiveLine
+      <div
         data={[
           {
             id: "Desktop",
