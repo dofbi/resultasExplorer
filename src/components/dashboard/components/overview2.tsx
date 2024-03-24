@@ -7,7 +7,8 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend
+  Legend,
+  ResponsiveContainer
 } from "recharts";
 
 const data = [
@@ -99,6 +100,7 @@ const data = [
 
 export default function Overview2() {
   return (
+ 
     <BarChart
       width={1500}
       height={300}
@@ -118,5 +120,6 @@ export default function Overview2() {
       <Bar dataKey="pv" stackId="a" fill="#8884d8" />
       <Bar dataKey="uv" stackId="a" fill="#82ca9d" />
     </BarChart>
+ 
   );
 }
